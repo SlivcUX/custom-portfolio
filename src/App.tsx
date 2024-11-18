@@ -21,6 +21,7 @@ function App() {
           <div className="flex gap-1 bg-white/5 backdrop-blur-lg p-1.5 rounded-2xl border border-white/10 shadow-xl">
             <TabButton label="Home" isActive={activeTab === 'home'} onClick={() => setActiveTab('home')} />
             <TabButton label="About" isActive={activeTab === 'about'} onClick={() => setActiveTab('about')} />
+            <TabButton label="Active Projects" isActive={activeTab === 'active projects'} onClick={() => setActiveTab('active projects')} />
             <TabButton label="Projects" isActive={activeTab === 'projects'} onClick={() => setActiveTab('projects')} />
             <TabButton label="Contact" isActive={activeTab === 'contact'} onClick={() => setActiveTab('contact')} />
           </div>
@@ -80,19 +81,37 @@ function App() {
             </div>
           </div>
 
+          {/* Active Projects Tab */}
+          <div className={`transition-all duration-500 ${activeTab === 'active projects' ? 'block' : 'hidden'}`}>
+            <div className="min-h-[80vh] flex items-center justify-center">
+              <div className="max-w-6xl mx-auto">
+                <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-emerald-400">Active Projects</h2>
+                <div className="grid md:grid-cols-1 gap-6 max-w-2xl mx-auto">
+                  {/* <ProjectCard
+                    title="Game Modification"
+                    description="I develop custom toolkits designed to provide a advantage in titles such as Counter-Strike 2, Call of Duty, and Apex Legends. These tools leverage vulnerable drivers and program overlays to render in-game data like player stats, health, and more, providing players with a competitive edge."
+                    image="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=2670"
+                    tags={['C++', 'C#', 'DirectX', 'OpenGL', 'ImGui']}
+                    link="https://github.com"
+                  /> */}
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Projects Tab */}
           <div className={`transition-all duration-500 ${activeTab === 'projects' ? 'block' : 'hidden'}`}>
             <div className="min-h-[80vh] flex items-center justify-center">
               <div className="max-w-6xl mx-auto">
                 <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-emerald-400">Featured Projects</h2>
                 <div className="grid md:grid-cols-1 gap-6 max-w-2xl mx-auto">
-                  <ProjectCard
+                  {/* <ProjectCard
                     title="Game Modification"
                     description="I develop custom toolkits designed to provide a advantage in titles such as Counter-Strike 2, Call of Duty, and Apex Legends. These tools leverage vulnerable drivers and program overlays to render in-game data like player stats, health, and more, providing players with a competitive edge."
                     image="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=2670"
                     tags={['C++', 'C#', 'DirectX', 'OpenGL', 'ImGui']}
                     link="https://github.com"
-                  />
+                  /> */}
                 </div>
               </div>
             </div>
