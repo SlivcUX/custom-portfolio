@@ -68,13 +68,10 @@ function App() {
                 <div className="space-y-8 bg-white/5 p-8 rounded-2xl border border-white/10 backdrop-blur-lg">
                   <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">About Me</h2>
                   <p className="text-gray-300 text-lg leading-relaxed">
-                    I'm a passionate developer with 2 years of experience building C++/C# applications.
-                    I specialize in game software development and some reverse engineering, creating innovative
-                    solutions that enhance gaming experiences.
+                    I'm a passionate developer with about 2 years of experience building C++/C# applications.
                   </p>
                   <p className="text-gray-300 text-lg leading-relaxed">
-                    When I'm not coding, you'll find me contributing to open-source projects,
-                    writing technical articles, or exploring new technologies.
+                    When I'm not coding, you'll probably find me contributing to open-source projects.
                   </p>
                 </div>
               </div>
